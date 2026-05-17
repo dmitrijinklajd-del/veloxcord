@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "veloxcord"
+version = "1.0.2"
+description = "A production-ready async Discord API wrapper for Python 3.11+"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "VeloxCord Contributors" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.9.0",
+]
+keywords = ["discord", "api", "wrapper", "async", "bot", "gateway", "slash-commands"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: AsyncIO",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/veloxcord"
+Repository = "https://github.com/YOUR_USERNAME/veloxcord"
+"Bug Tracker" = "https://github.com/YOUR_USERNAME/veloxcord/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["veloxcord*"]
